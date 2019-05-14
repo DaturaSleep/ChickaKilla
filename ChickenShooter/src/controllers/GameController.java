@@ -20,6 +20,7 @@ public class GameController {
 
 	private final Integer BASIC_SPEED_IN_SECONDS;
 	private final Integer SPAWNING_RATE;
+	
 	private Task task = new Task<Void>() {
 		@Override
 		public Void call() {

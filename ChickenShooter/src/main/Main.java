@@ -8,7 +8,7 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-	static GameModel game = new GameModel(GameComplexity.HARD);
+	static GameModel game = new GameModel(GameComplexity.EASY);
 	static GameView view = new GameView();
 	
 	static GameController gC = new GameController(game, view);
