@@ -25,8 +25,9 @@ public class GameModel {
 	}
 
 	public void decreasePlayerHpByOne() {
-		if (this.playerHp - 1 == MIN_PLAYER_HP) {
+		if (this.playerHp - 1 == MIN_PLAYER_HP || this.playerHp == MIN_PLAYER_HP) {
 			this.endGame();
+			setPlayerHp(MIN_PLAYER_HP);
 		} else {
 			setPlayerHp(playerHp - 1);
 		}
